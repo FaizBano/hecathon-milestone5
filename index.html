@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <metecho "# hecathon-milestone5" >> README.mda charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHREABLE RESUME BUILDER</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><b><u><center>SHAREABLE RESUME BUILDER</center></u></b></h1>
+    <form id="resume-form">
+
+        <fieldset>
+        <legend> <u>PERSONAL INFORMATION</u></legend>
+        <label for="username">USER NAME:</label>
+        <input type="text" id="username" placeholder="Enter User Name" required>
+       <br>
+        <label for="name">NAME:</label>
+        <input type="text" id="name" placeholder="Enter your Name" required>
+        <br>
+        <label for="tel">PHONE NO.:</label>        <br>
+        <input type="tel" id="phone" placeholder="Enter your content Number" required>
+                <br>
+        <label for="email">Email:</label>        
+        <input type="email" id="email" placeholder="Enter your Email Address" required>
+    </fieldset>
+    <fieldset>        
+        <legend><u>EDUCAATION</u></legend>
+        <label for="education"></label>
+        <textarea  id="education" placeholder="Enter  your Eduaiton" rows="4" required></textarea>
+    </fieldset>
+
+    <fieldset>
+        <legend><U>EXPERIENCE</U></legend>
+        <label for="experience"></label>
+        <textarea  id="experience" placeholder="Enter  your Experience" rows="4" required></textarea>
+    </fieldset>
+    <fieldset>
+        <legend><U>SKILLS</U></legend>
+        <label for="skills"></label>
+        <textarea id="skills" placeholder="Enter  your skills" rows="4" required></textarea>
+    </fieldset>
+    <button id="submit"><b>Generate Resume</b></button>
+   
+    </form>
+    <br>
+    <!-- Editable Resume -->
+     <div id="resumeDisplay" contenteditable="true">
+         <!-- Resume will be created bilow -->
+        </div>
+        <br>
+        <!-- section for the shareabel link and download option -->
+         <div id="shareabe-link-container" style="display: none;">
+            <h2>SHAREABLE LINK</h2>
+            <P> Here is your unique link to view your shareable link </P>
+            <a href="#"id="shareable-link" target="_blank"></a>
+            <br>
+            <button id="download-pdf"><b>download as pdf</b></button>
+
+         </div>
+
+
+        <script src="main.js"></script>
+
+</body>
+</html> 
